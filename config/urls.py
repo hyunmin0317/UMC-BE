@@ -46,6 +46,7 @@ urlpatterns = [
     path('', views.home),
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
+    path('covid/', include('covid.urls')),
 ]
 
 urlpatterns += router.urls
